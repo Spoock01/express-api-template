@@ -1,5 +1,4 @@
 import './utils/ConsoleLogger';
-import './utils/GlobalFunctions';
 import 'express-async-errors';
 
 import cors from 'cors';
@@ -38,7 +37,7 @@ export const runServer = async () => {
 			}
 		}
 
-		serviceInfo(`${numberOfEndpoints} imported endpoints..`);
+		serviceInfo(`${numberOfEndpoints} imported endpoints!`);
 	};
 
 	importRoutes();

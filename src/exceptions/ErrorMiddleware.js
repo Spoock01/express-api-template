@@ -1,3 +1,4 @@
+import env from '../environment/Environment';
 import moment from 'moment';
 
 const globalErrorMiddleware = (error, req, res, next) => {
@@ -13,7 +14,7 @@ const globalErrorMiddleware = (error, req, res, next) => {
 	}
 
 	return res.status(statusCode).json({
-		timestamp: moment().format('MMMM Do YYYY, h:mm:ss a'),
+		timestamp: moment().format(env.ERROR_TIMESTAMP_FORMAT),
 		statusCode,
 		method,
 		path,

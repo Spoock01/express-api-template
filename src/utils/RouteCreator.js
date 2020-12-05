@@ -1,13 +1,13 @@
-const validatePathOrThrow = (path) => {
+const validatePath = (path) => {
 	if (typeof path !== 'string' || !path.startsWith('/'))
 		throw new Error(`Invalid path found: ${path}`);
 };
 
-const validateFnOrThrow = (fn) => {
+const validateFunction = (fn) => {
 	if (typeof fn !== 'function') throw new Error('Invalid function.');
 };
 
-const isArrayOfFunctions = (middlewares) => {
+const validateMiddlewares = (middlewares) => {
 	if (middlewares && middlewares.length === 0) return true;
 
 	if (!middlewares) {
@@ -23,10 +23,10 @@ const isArrayOfFunctions = (middlewares) => {
 	return true;
 };
 
-export default (routePath, fn, middlewares = []) => {
-	validatePathOrThrow(routePath);
-	validateFnOrThrow(fn);
-	isArrayOfFunctions(middlewares);
+export default (path, fn, middlewares = []) => {
+	validatePath(path);
+	validateFunction(fn);
+	validateMiddlewares(middlewares);
 
-	return { route: routePath, routeFunction: fn, middlewares };
+	return { route: path, routeFunction: fn, middlewares };
 };
