@@ -67,9 +67,9 @@ export default {
 	GET: [
 		createRoute('/endpointName', endpointFunction),
 	],
-  POST: [
-    createRoute('/example', exampleFunction),
-  ]
+    POST: [
+      createRoute('/example', exampleFunction),
+    ]
 };
 ```
 
