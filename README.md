@@ -213,7 +213,7 @@ console.log(env.PORT);
 
 É possível definir um valor base para todas as rotas da API. Para modificar, basta modificar o valor da seguinte variável de ambiente: ```API_BASE_PATH```.
 
-Também é possível definir quais verbos serão permitidos. Para modificar, basta incluir ou remover valores da lista allowedVerbs que se encontra no arquivo ```src\config\ServerConfiguration```. Por padrão, os seguintes verbos estão disponíveis: POST, GET, PUT, DELETE.
+Também é possível definir quais verbos serão permitidos. Para modificar, basta incluir ou remover valores da lista ```allowedVerbs``` que se encontra no arquivo ```src\config\ServerConfiguration```. Por padrão, os seguintes verbos estão disponíveis: POST, GET, PUT, DELETE.
 
 
 [comment]: <> (Incluir uso de funções globais)
