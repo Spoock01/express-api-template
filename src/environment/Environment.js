@@ -11,6 +11,4 @@ const loadEnvironments = function loadEnviromentVariables() {
 
 const env = dotenv.config({ path: loadEnvironments() }).parsed;
 
-console.log(env);
-
 export default env;

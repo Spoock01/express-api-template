@@ -195,3 +195,25 @@ Não é necessário uso de try/catch para todas as validações. Por padrão, to
 }
 ```
 
+
+#### **Variáveis de ambiente:**
+
+Para utilizar variáveis de ambiente, basta incluí-las no arquivo ```.env.dev``` na pasta ```src\environment```.
+Para resgatar as variáveis, basta importar o objeto ```env``` do arquivo ```src\environment\Environment```;
+
+Exemplo:
+
+```
+import env from 'src\environment\Environment';
+
+console.log(env.PORT);
+```
+
+#### **Informações gerais:**
+
+É possível definir um valor base para todas as rotas da API. Para modificar, basta modificar o valor da seguinte variável de ambiente: ```API_BASE_PATH```.
+
+Também é possível definir quais verbos serão permitidos. Para modificar, basta incluir ou remover valores da lista allowedVerbs que se encontra no arquivo ```src\config\ServerConfiguration```. Por padrão, os seguintes verbos estão disponíveis: POST, GET, PUT, DELETE.
+
+
+[comment]: <> (Incluir uso de funções globais)
