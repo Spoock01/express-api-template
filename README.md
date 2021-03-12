@@ -111,8 +111,8 @@ new BadRequestException(message, errors)
 
 **Argumentos**:
 
-message(String): Mensagem personalizada do erro
-errors(Array): Array com uma lista de erros
+message(String): Mensagem personalizada do erro   
+errors(Array): Array com uma lista de erros   
 
 Para retornar um erro para o cliente, os seguintes comandos podem ser utilizado:
 
