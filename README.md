@@ -23,9 +23,11 @@ Este template faz uso das seguintes bibliotecas:
 
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [cross-env](https://www.npmjs.com/package/cross-env)
+  
 #### Logger:
 - [chalk](https://www.npmjs.com/package/chalk)
 - [morgan](https://www.npmjs.com/package/morgan)
+  
 #### Gerais:
 - [cors](https://www.npmjs.com/package/cors)
 - [express](https://www.npmjs.com/package/express)
