@@ -8,3 +8,5 @@ tmp/*
 *.env
 *.lock
 yarn.lock
+
+teste/
